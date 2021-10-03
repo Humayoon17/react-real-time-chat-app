@@ -1,13 +1,97 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
+
+.flex {
+    display: flex;
+}
+
+.item-center {
+    align-items: center;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Sidebar Icon START */
+
+.sidebar-icon {
+    background-color: #e4f0e9;
+    border-right: 1px solid #B7D6C3;
+    padding: 0.5rem;
+}
+
+
+/* Sidebar Icon END */
+
+
+/* Sidebar Users START */
+
+.sidebar-users {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    flex: 25%;
+    padding-left: 0.5rem;
+}
+
+.sidebar-users__title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.user {
+    background-color: red;
+    padding: 0.5rem;
+    margin-bottom: .5rem;
+}
+
+.user__avatar {
+    margin-right: 1rem;
+}
+
+.users-list {
+    overflow-y: scroll;
+    height: 90vh;
+}
+
+
+/* Sidebar User END */
+
+
+/* Chat  START */
+
+.chat {
+    background-color: yellow;
+    display: flex;
+    flex-direction: column;
+    flex: 75%;
+    height: 100vh;
+}
+
+.chat__header {
+    background-color: #B7D6C3;
+    height: 50px;
+}
+
+.chat__message__input {}
+
+
+/* Chat  END */
