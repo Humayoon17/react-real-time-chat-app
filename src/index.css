@@ -58,9 +58,17 @@ code {
 }
 
 .user {
-    background-color: red;
+    margin-right: 1rem;
     padding: 0.5rem;
     margin-bottom: .5rem;
+    border-radius: 10px;
+    transition: 500ms all;
+}
+
+.user:hover {
+    background-color: rgb(218, 218, 218);
+    cursor: pointer;
+    border-radius: 10px;
 }
 
 .user__avatar {
@@ -86,12 +94,43 @@ code {
     height: 100vh;
 }
 
+.chat__user__name {
+    margin-right: 1rem;
+    font-weight: bold;
+}
+
 .chat__header {
     background-color: #B7D6C3;
     height: 50px;
+    display: flex;
+    justify-content: center;
 }
 
-.chat__message__input {}
+.chat__message {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.chat__message__input {
+    display: flex;
+    align-items: center;
+    margin: 1rem 2rem;
+}
+
+.chat__input {
+    margin: 0 1rem;
+    display: flex;
+    flex: 1;
+}
+
+.chat__input input {
+    padding: 0.5rem;
+    width: 100%;
+    border: none;
+    border-radius: .2rem;
+    outline: none;
+}
 
 
 /* Chat  END */
